@@ -1,4 +1,23 @@
+"""
+Simple Calculator
 
+Description:
+Command-line calculator that performs basic arithmetic operations
+between two numbers. The program repeatedly asks the user for input
+until the user chooses to exit.
+
+Features:
+- Supports addition, subtraction, multiplication, and division
+- Handles invalid numeric input using exception handling
+- Runs in a loop until the user exits
+
+Concepts used:
+- while loops
+- conditional statements
+- user input
+- exception handling (try/except)
+- basic arithmetic operators
+"""
 
 print(14*'-')
 print('| Calculator |')
