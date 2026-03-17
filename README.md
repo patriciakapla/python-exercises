@@ -9,11 +9,13 @@ Collection of small Python programs written while learning the language.
 - Loops
 - Strings
 - Lists
+- Functions
+- User Input (CLI)
+- Basic error handling (try/except)
 
 ## Exercises
-- simple_calculator.py - Simple CLI calculator 
-- while_letter_counter.py - Find the most frequent letter in a sentence using while loop
-- for_letter_counter.py - Find the most frequent letter in a sentence using for loop
 
-
-    
+- word_guessing_game.py - CLI word guessing game
+- for_letter_counter.py - Find the most frequent letter (for loop)
+- while_letter_counter.py - Find the most frequent letter (while loop)
+- simple_calculator.py - Basic CLI calculator
