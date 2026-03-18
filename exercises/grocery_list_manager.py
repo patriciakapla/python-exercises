@@ -23,9 +23,8 @@ Concepts used:
 import os
 
 def validate_input(message, allowed_values):
-    valid_input = allowed_values
     user_input = input(message).lower()
-    while user_input not in valid_input:
+    while user_input not in allowed_values:
         print("Invalid input")
         user_input = input(message).lower()
     return user_input
@@ -52,13 +51,17 @@ while True:
     elif user_input == "a":
         item = input("What would you like to add? ")
         grocery_list.append(item)
+        os.system("clear")
     elif user_input == "r":
         item_index = validate_int("What item would you like to remove [index]? ")
-        grocery_list.pop(item_index)
+        try:
+            grocery_list.pop(item_index)
+            os.system("clear")
+        except IndexError:
+            print("Invalid index")
+            continue
     elif user_input == "l":
         for index, item in enumerate(grocery_list):
             print(index, item)
-        continue
-    os.system("clear")
 
 
