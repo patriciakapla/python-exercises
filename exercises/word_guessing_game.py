@@ -79,7 +79,7 @@ while True:
 
     if masked_word == secret_word:
         print_game_results()
-        correct_letters = []
+        correct_letters.clear()
         attempts = 0
         secret_word = choice(secret_words_list)
         continue_playing = input("Do you want to play another round? Enter Y to keep playing: ").lower()
