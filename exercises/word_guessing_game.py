@@ -58,7 +58,12 @@ def print_game_results():
         print("You lose!")
         print(f"The secret word is {secret_word}")
 
+
+
 '''  MAIN PROGRAM  '''
+print("*"*34)
+print("LET'S PLAY THE WORD GUESSING GAME!")
+print("*"*34)
 
 while True:
     guess = validate_guess()
@@ -70,10 +75,21 @@ while True:
     masked_word = get_masked_word()
     print(masked_word)
 
-
     attempts += 1
 
     if masked_word == secret_word:
-        break
-    
-print_game_results()
+        print_game_results()
+        correct_letters = []
+        attempts = 0
+        secret_word = choice(secret_words_list)
+        continue_playing = input("Do you want to play another round? Enter Y to keep playing: ").lower()
+
+        if  continue_playing == "y":
+            print("*"*34)
+            print("LET'S PLAY THE WORD GUESSING GAME!")
+            print("*"*34)
+            continue
+        else:
+            break
+
+        
