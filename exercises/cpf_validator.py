@@ -35,7 +35,7 @@ def calculate_weighted_sum(digits, multiplier_value):
         multiplier_value -= 1  
     return multiplication_sum
 
-def get_final_digit(multiplication_sum):
+def get_digit(multiplication_sum):
     calculated_digit = (multiplication_sum * 10) % 11
     final_digit = 0 if calculated_digit > 9 else calculated_digit
     return final_digit
@@ -44,8 +44,7 @@ def validate_digit(calculated_digit, actual_digit):
     cpf_digit = int(actual_digit)
     if calculated_digit == cpf_digit:
         return True
-    else:
-        return False
+    return False
     
 ''' MAIN PROGRAM '''
 print("CPF VALIDATION")
@@ -54,14 +53,14 @@ cpf = get_valid_cpf_input()
 # 10th digit validation (***.***.***-x*)
 first_9_digits = cpf[:9]
 multiplication_sum_9 = calculate_weighted_sum(first_9_digits, 10)
-final_digit_10 = get_final_digit(multiplication_sum_9)
+final_digit_10 = get_digit(multiplication_sum_9)
 digit_10_is_valid = validate_digit(final_digit_10, cpf[-2])
 
 
 # 11th digit validation (***.***.***-*x)
 first_10_digits = cpf[:10]    
 multiplication_sum_10 = calculate_weighted_sum(first_10_digits, 11) 
-final_digit_11 = get_final_digit(multiplication_sum_10)
+final_digit_11 = get_digit(multiplication_sum_10)
 digit_11_is_valid = validate_digit(final_digit_11, cpf[-1])
 
 # cpf validation
