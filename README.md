@@ -13,9 +13,13 @@ Collection of small Python programs written while learning the language.
 - Functions
 - User Input (CLI)
 - Basic error handling (try/except)
+- Closure
+- Higher-order functions
+- Nested functions
 
 ## Exercises
 
+- multiplier_closure.py - Generate functions that multiply values using closure
 - cpf_validator.py - Validate a CPF (Brazilian ID) using check digits
 - grocery_list_manager.py - CLI grocery list manager
 - word_guessing_game.py - CLI word guessing game
