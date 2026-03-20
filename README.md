@@ -9,12 +9,14 @@ Collection of small Python programs written while learning the language.
 - Loops
 - Strings
 - Lists
+- Iteration and aggregation
 - Functions
 - User Input (CLI)
 - Basic error handling (try/except)
 
 ## Exercises
 
+- cpf_validator.py - Validate a CPF (Brazilian ID) using check digits
 - grocery_list_manager.py - CLI grocery list manager
 - word_guessing_game.py - CLI word guessing game
 - for_letter_counter.py - Find the most frequent letter (for loop)
