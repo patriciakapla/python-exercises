@@ -16,9 +16,11 @@ Collection of small Python programs written while learning the language.
 - Closure
 - Higher-order functions
 - Nested functions
+- Dictionaries
 
 ## Exercises
 
+- math_quiz.py - CLI math quiz using dictionaries
 - multiplier_closure.py - Generate functions that multiply values using closure
 - cpf_validator.py - Validate a CPF (Brazilian ID) using check digits
 - grocery_list_manager.py - CLI grocery list manager
