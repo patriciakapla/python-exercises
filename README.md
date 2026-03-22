@@ -20,6 +20,7 @@ Collection of small Python programs written while learning the language.
 
 ## Exercises
 
+- first_repeated_number.py - Find the first repeated number in a list
 - math_quiz.py - CLI math quiz using dictionaries
 - multiplier_closure.py - Generate functions that multiply values using closure
 - cpf_validator.py - Validate a CPF (Brazilian ID) using check digits
