@@ -125,3 +125,67 @@ new_keys_tuples = ('new_key_1', 'new value 1'), ('new_key_2', 2)
 
 new_client.update(new_keys_tuples)
 print(new_client)
+
+
+
+
+# PACKING AND UNPACKING DICTIONARIES - *args and **kwargs
+print("\nPACKING AND UNPACKING DICTIONARIES - *args and **kwargs")
+
+# packing 
+a, b = 1, 2
+print(a, b)
+
+a, b = b, a
+print(a, b)
+
+
+person = {
+    'first_name': 'Janet',
+    'last_name': 'Geanette',
+}
+
+a, b = person
+print(a, b) # prints keys
+
+a, b = person.values()
+print(a, b) # prints values
+
+a, b = person.items()
+print(a, b) # prints tuples with key, value
+print()
+
+#  internal unpacking:
+(a1, a2), (b1, b2) = person.items()
+print(a1, a2) # unpacks first item of dictionary
+print(b1, b2) # prints second item of dictionary
+# SAME AS:
+for key, value in person.items():
+    print(key, value)
+
+
+print()
+
+person_info = {
+    'age': 39,
+    'sex': "female",
+}
+
+# packing two dictionaries and more with *args
+complete_person = {**person, **person_info, 'city': 'Pindamonhangaba'}
+
+print(complete_person)
+print()
+
+
+#  packing and unpacking dictionaries with **kwargs - keyword arguments
+
+def display_keyword_args(*args, **kwargs):
+    print('Non-keyworded arguments:', args)
+    for key,value in kwargs.items():
+        print(key, value)
+
+display_keyword_args( 'singer', first_name='Sandra', last_name='de Sá')
+print()
+
+display_keyword_args(**complete_person) # passes a whole dictionary as argument
