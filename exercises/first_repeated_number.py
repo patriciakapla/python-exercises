@@ -4,6 +4,8 @@ Exercise: First Repeated Number
 Description:
 Given a list of integers, return the first number that appears more than once. If no repetition exists, return -1.
 
+Concepts used:
+Sets
 """
 
 integer_lists_list = [
@@ -21,23 +23,20 @@ integer_lists_list = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
 
-
-
 def get_first_repeated_number(integer_list):
-        new_list = []
-        for number in integer_list:
-            if number not in new_list:
-                new_list.append(number)
-            else:
-                return number
-        return -1
+    seen = set()
+    for number in integer_list:
+        if number in seen:
+            return number
+        seen.add(number)
+    return -1
 
 for index, integer_list in enumerate(integer_lists_list):
     repeated_number = get_first_repeated_number(integer_list)
     if repeated_number == -1:
-         print('No repeated numbers.')
+         print(f"List #{index + 1}: No repeated numbers.")
     else:
-        print(f"The repeated number in list number {index} is: {repeated_number}")
+        print(f"The repeated number in list #{index + 1} is: {repeated_number}")
 
 
 

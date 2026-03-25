@@ -9,18 +9,19 @@ Collection of small Python programs written while learning the language.
 - Loops
 - Strings
 - Lists
-- Iteration and aggregation
+- Iteration
 - Functions
-- User Input (CLI)
+- CLI input/output
 - Basic error handling (try/except)
 - Closure
 - Higher-order functions
 - Nested functions
 - Dictionaries
+- Sets
 
 ## Exercises
 
-- first_repeated_number.py - Find the first repeated number in a list
+- first_repeated_number.py - Find the first repeated number in a list (sets)
 - math_quiz.py - CLI math quiz using dictionaries
 - multiplier_closure.py - Generate functions that multiply values using closure
 - cpf_validator.py - Validate a CPF (Brazilian ID) using check digits
