@@ -18,9 +18,13 @@ Collection of small Python programs written while learning the language.
 - Nested functions
 - Dictionaries
 - Sets
+- Deep copy
+- Sorting
+- Lambda functions
 
 ## Exercises
 
+- product_list_transformation.py - Transform and sort a list of dictionaries using deep copy
 - first_repeated_number.py - Find the first repeated number in a list (sets)
 - math_quiz.py - CLI math quiz using dictionaries
 - multiplier_closure.py - Generate functions that multiply values using closure
