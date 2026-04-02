@@ -22,9 +22,11 @@ Collection of small Python programs written while learning the language.
 - Sorting
 - Lambda functions
 - List comprehension
+- Args
 
 ## Exercises
 
+- function_factory.py - Create functions with preloaded arguments using closures
 - product_list_transformation.py - Transform and sort a list of dictionaries using list comprehension, lambda function and deep copy
 - first_repeated_number.py - Find the first repeated number in a list (sets)
 - math_quiz.py - CLI math quiz using dictionaries
