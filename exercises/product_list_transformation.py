@@ -32,11 +32,11 @@ products = [
 
 
 def raise_prices(product_list, key, multiplier):
-    deep_copy = copy.deepcopy(product_list)
-    for item in deep_copy:
-        item[key] *= multiplier
-        item[key] = round(item[key], 2)
-    return deep_copy
+    new_product_list = [
+        {**item, key: round(item[key] * multiplier, 2)}
+        for item in copy.deepcopy(product_list)
+    ]
+    return new_product_list
 
 
 products_10percent_raise = raise_prices(products, "price", 1.1)
@@ -44,9 +44,7 @@ products_10percent_raise = raise_prices(products, "price", 1.1)
 products_name_sorted = copy.deepcopy(products)
 products_name_sorted.sort(key=lambda item: item["name"], reverse=True)
 
-
-products_price_sorted = copy.deepcopy(products)
-products_price_sorted.sort(key=lambda item: item["price"])
+products_price_sorted = sorted(copy.deepcopy(products), key=lambda item: item["price"])
 
 print(*products, sep="\n")
 print()

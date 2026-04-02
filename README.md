@@ -21,10 +21,11 @@ Collection of small Python programs written while learning the language.
 - Deep copy
 - Sorting
 - Lambda functions
+- List comprehension
 
 ## Exercises
 
-- product_list_transformation.py - Transform and sort a list of dictionaries using deep copy
+- product_list_transformation.py - Transform and sort a list of dictionaries using list comprehension, lambda function and deep copy
 - first_repeated_number.py - Find the first repeated number in a list (sets)
 - math_quiz.py - CLI math quiz using dictionaries
 - multiplier_closure.py - Generate functions that multiply values using closure
