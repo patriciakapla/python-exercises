@@ -23,9 +23,11 @@ Collection of small Python programs written while learning the language.
 - Lambda functions
 - List comprehension
 - Args
+- Structural pattern matching (match-case)
 
 ## Exercises
 
+- todo_list_cli.py - CLI to-do list with undo/redo (stack)
 - function_factory.py - Create functions with preloaded arguments using closures
 - product_list_transformation.py - Transform and sort a list of dictionaries using list comprehension, lambda function and deep copy
 - first_repeated_number.py - Find the first repeated number in a list (sets)
