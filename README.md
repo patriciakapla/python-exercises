@@ -24,10 +24,11 @@ Collection of small Python programs written while learning the language.
 - List comprehension
 - Args
 - Dynamic dispatch
+- JSON handling
 
 ## Exercises
 
-- todo_list_cli_dict.py - CLI to-do list using dynamic dispatch
+- todo_list_cli_dict.py - CLI to-do list using dynamic dispatch and JSON handling
 - todo_list_cli.py - CLI to-do list with undo/redo (stack)
 - function_factory.py - Create functions with preloaded arguments using closures
 - product_list_transformation.py - Transform and sort a list of dictionaries using list comprehension, lambda function and deep copy

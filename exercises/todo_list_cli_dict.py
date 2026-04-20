@@ -1,9 +1,12 @@
 """
 Refactoring todo list:
 Storing functions inside a dictionary so you can call them dynamically, using the dictionary method .get()
-Dynamic dispatch pattern
+    Dynamic dispatch pattern
+Storing results on json
 
 """
+
+import json
 
 
 def print_list(todo):
@@ -70,4 +73,4 @@ while True:
 
 
 with open("todo.json", "w", encoding="utf8") as file:
-    file.write("\n".join(todo))
+    json.dump(todo, file, indent=2)
