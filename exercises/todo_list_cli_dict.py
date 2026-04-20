@@ -47,7 +47,26 @@ def redo_task(todo, removed):
     print()
 
 
-todo = []
+def read_json(todo, file_path):
+    data = []
+    try:
+        with open(file_path, "r", encoding="utf8") as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        print("File not found! Creating file...")
+        save_json(todo, file_path)
+    return data
+
+
+def save_json(todo, file_path):
+    data = todo
+    with open(file_path, "w", encoding="utf8") as file:
+        json.dump(todo, file, indent=2, ensure_ascii=False)
+    return data
+
+
+FILE_PATH = "todoList.json"
+todo = read_json([], FILE_PATH)
 removed = []
 commands = {
     "list": lambda: print_list(todo),
@@ -60,7 +79,7 @@ commands = {
 while True:
     print()
     print("Commands: list, add, undo, redo, exit")
-    command = input("Enter a command or a task: ").lower()
+    command = input("Enter a command or a task: ")
 
     action = (
         commands.get(command) if commands.get(command) is not None else commands["add"]
@@ -72,5 +91,4 @@ while True:
         action()
 
 
-with open("todo.json", "w", encoding="utf8") as file:
-    json.dump(todo, file, indent=2)
+save_json(todo, FILE_PATH)
