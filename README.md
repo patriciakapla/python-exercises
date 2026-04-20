@@ -23,10 +23,11 @@ Collection of small Python programs written while learning the language.
 - Lambda functions
 - List comprehension
 - Args
-- Structural pattern matching (match-case)
+- Dynamic dispatch
 
 ## Exercises
 
+- todo_list_cli_dict.py - CLI to-do list using dynamic dispatch
 - todo_list_cli.py - CLI to-do list with undo/redo (stack)
 - function_factory.py - Create functions with preloaded arguments using closures
 - product_list_transformation.py - Transform and sort a list of dictionaries using list comprehension, lambda function and deep copy

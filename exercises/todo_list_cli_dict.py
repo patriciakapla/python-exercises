@@ -1,6 +1,7 @@
 """
 Refactoring todo list:
-Storing functions inside a dictionary so you can call them dynamically,  using the dictionary method .get()
+Storing functions inside a dictionary so you can call them dynamically, using the dictionary method .get()
+Dynamic dispatch pattern
 
 """
 
