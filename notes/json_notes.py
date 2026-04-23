@@ -36,7 +36,7 @@ person = {
 #  THE CODE ABOVE WROTE A JSON FILE WITH THE PERSON DICTIONARY.
 #  THE FOLLOWING CODE IS HOW TO GET DATA FROM A JSON FILE. I'll use the same json file, so it will put the data in json into new_person
 
-with open("./notes/json_example.json", "r", encoding="utf8") as file:
+with open("./notes/json_example_3.json", "r", encoding="utf8") as file:
     new_person = json.load(file)
     print(new_person)
     print(type(new_person))

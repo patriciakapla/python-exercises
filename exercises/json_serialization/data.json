@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Buffy Summers",
+  "hunter": true,
+  "vampire": false
+ },
+ {
+  "name": "Angel",
+  "hunter": false,
+  "vampire": true
+ },
+ {
+  "name": "Willow Rosenberg",
+  "hunter": true,
+  "vampire": false
+ },
+ {
+  "name": "Spike",
+  "hunter": false,
+  "vampire": true
+ },
+ {
+  "name": "Drusilla",
+  "hunter": false,
+  "vampire": true
+ }
+]
