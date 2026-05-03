@@ -26,9 +26,13 @@ Collection of small Python programs written while learning the language.
 - Dynamic dispatch
 - JSON handling
 - Object serialization and deserialization
+- Object-oriented programming (OOP)
+- Class association
+- Getters and setters (property decorators)
 
 ## Exercises
 
+- class_association.py - Association between classes. Getters and setters
 - json_serialization - Serialize and deserialize class objects to/from JSON files
 - todo_list_cli_dict.py - CLI to-do list using dynamic dispatch and JSON handling
 - todo_list_cli.py - CLI to-do list with undo/redo (stack)
